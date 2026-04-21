@@ -282,12 +282,95 @@ nav a:hover {
 }
 
 /* =============================================
-   Work
+   Insights (main page preview)
    ============================================= */
 
-.work-placeholder {
-  font-size: 1.05rem;
+.insights-list {
+  max-width: 600px;
+}
+
+.insight-item {
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-alt);
+}
+
+.insight-title {
+  margin-bottom: var(--space-sm);
+}
+
+.insight-title a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.insight-title a:hover {
+  color: var(--color-accent-light);
+}
+
+/* =============================================
+   Article page
+   ============================================= */
+
+.article-intro {
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.article-lede {
+  font-size: 1.15rem;
+  max-width: 560px;
   color: var(--color-text-muted);
+}
+
+.article-body {
+  padding: var(--space-xl) 0;
+}
+
+.article-container {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.article-container h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: 1.4rem;
+}
+
+.article-container h3 {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+}
+
+.article-container p {
+  margin-bottom: var(--space-sm);
+  line-height: 1.8;
+}
+
+.article-container a {
+  color: var(--color-accent-light);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-container a:hover {
+  color: var(--color-accent);
+}
+
+.article-cta {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+a.nav-brand {
+  text-decoration: none;
 }
 
 /* =============================================
