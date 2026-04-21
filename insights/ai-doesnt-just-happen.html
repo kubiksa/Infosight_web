@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Most AI failures aren't AI problems. They're data problems. What actually has to exist before AI can work.">
+  <title>AI Doesn&rsquo;t Just Happen &mdash; InfoSight</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="../index.html" class="nav-brand">InfoSight</a>
+      <ul>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#services">Services</a></li>
+        <li><a href="../index.html#insights">Insights</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="article-intro">
+      <div class="container">
+        <p class="eyebrow">Insights</p>
+        <h1>AI Doesn&rsquo;t Just Happen</h1>
+        <p class="article-lede">Most AI failures aren&rsquo;t AI problems. They&rsquo;re data problems.</p>
+      </div>
+    </section>
+
+    <div class="article-body">
+      <div class="article-container">
+
+        <p>When a company decides to offer AI to customers or build internal AI tools, it&rsquo;s not just a matter of deciding to implement some new software. You can&rsquo;t just buy a subscription to an API and call it good. That one decision actually implicates numerous other decisions, and most of those decisions have nothing to do with AI itself.</p>
+        <p>They have to do with your data.</p>
+
+        <h2>Inventory</h2>
+        <p>Before a single model gets trained or a single prompt gets answered, someone has to answer some very unglamorous questions. The questions sound simple: What data do you actually have? Where does it live? Is it accurate? However, when most organizations go looking, they find data scattered across systems that don&rsquo;t talk to each other, duplicated in ways nobody intended, and accurate enough for the humans who use it daily but nowhere near reliable enough to train a system that will make decisions at scale.</p>
+        <p>Once inventory is completed, decisions around what format and where the data should be stored will need to be made based on use cases. This is architecture work, not AI work.</p>
+
+        <h2>Quality</h2>
+        <p>Now that a data store or stores have been decided on, the next issue is data quality. Determining quality means first deciding on and building a quality measuring stick, then using that stick to figure out what data is wrong, inconsistent, or incomplete, and fixing it. What that measuring stick looks like depends on what results the team is looking for from the AI tools. Are the results supposed to give a prediction on sales per product line per quarter? Then the historical sales data needs to be complete, consistent, and tagged in a way the model can interpret.</p>
+
+        <h2>Classification</h2>
+        <p>Every piece of data needs to be understood in terms of what it is, how sensitive it is, and what rules govern it. Therefore, decisions regarding a classification system also have to be made before overlaying AI. Without classification, sensitive data (personal information, financial records, regulated data) can end up in training sets where it doesn&rsquo;t belong. Once it&rsquo;s in the model it&rsquo;s nearly impossible to remove. That may not just be a technical problem depending on your industry. It may be a legal and regulatory one.</p>
+
+        <h2>Governance</h2>
+        <p>I&rsquo;m sure you&rsquo;ve heard the word before and your eyes have glazed over. However, have you actually looked into what data governance really is? Governance is what keeps the data secure, compliant, available, and clean. It encompasses the policies and controls that answer questions like: who owns it, who can access it, how it needs to be regulated, how the quality is monitored, and who is accountable to enforce such controls. Those are all important questions to ask and answer when getting AI-ready.</p>
+        <p>None of this is AI, but all of it is a prerequisite to AI. As <a href="https://www.cio.com/article/3622854/its-2025-are-your-data-strategies-strong-enough-to-de-risk-ai-adoption.html">CIO magazine points out</a>, data quality issues continue to be one of the largest problems even with data management programs in place. Governance is what drives the quality policies and is therefore at the forefront of many companies&rsquo; data and AI readiness campaigns. Additionally, according to a <a href="https://idcdocserv.com/download/US54269326.pdf">2026 IDC white paper</a>, one in four enterprises cannot determine ROI from their AI investments, most often because the data foundation underneath was never properly established before the model was deployed.</p>
+        <p>The scope of this work has real staffing implications that most organizations underestimate. For startups, the second hire should be a seasoned data engineer or data architect. That person will be the most valuable in the organization if data and AI are core to the business plan. For enterprise companies, the volume of work involved in building or remediating a data foundation takes a village. Wading through legacy systems, creating order out of years of accumulated chaos, and building the governance structures that AI requires takes a team of seasoned architects, infrastructure engineers, DevOps, and data engineers who can think at the system level. Underestimating the resourcing this requires is one of the most common reasons AI initiatives never make it past the POC stage.</p>
+
+        <h2>The Risks You&rsquo;re Not Thinking About</h2>
+        <p>The things mentioned as prerequisites to AI may seem like just a checklist of &ldquo;to dos.&rdquo; On the surface, yes, that is the truth of it, but if you don&rsquo;t do these things, here is what potentially happens.</p>
+
+        <h3>Hallucinations</h3>
+        <p>Assuming you at least vaguely keep up with AI, you&rsquo;ve heard of hallucinations as not just the monsters we see on the trail when we&rsquo;re 15 hours into a 24 hour adventure race. Hallucinations are confident but false, misleading, or fabricated responses generated by large language models. They aren&rsquo;t random AI weirdness. They&rsquo;re when a model prioritizes pattern matching over factual correctness due to holes or inconsistencies in training data, biased data, or over optimization. Due to the nature of an LLM (how it works under the hood), there will probably always be certain circumstances when it hallucinates. However, using clean, complete, quality data goes a long way in reducing the chance of hallucinations, and that starts long before the model is ever trained. It starts with your data foundation.</p>
+        <p>How much could hallucinations cost you? It&rsquo;s hard to measure the time lost chasing false information, but global financial losses tied to AI hallucinations hit $67.4 billion in 2024, with enterprises spending approximately $14,200 per employee annually on hallucination mitigation efforts <a href="https://www.allaboutai.com/resources/ai-statistics/ai-hallucinations/">(AllAboutAI, 2025)</a>. Remember, advances and learnings in AI are on a curve rising steeply to the right so these numbers are hopefully not as drastic today, however, even presently, there are major decisions being made based on AI hallucinations.</p>
+
+        <h3>Security Exposure</h3>
+        <p>AI systems that ingest enterprise data are a new and attractive attack surface. If your data governance is weak, you may not even know what sensitive information is flowing into and out of your AI system. Without a governed, classified data foundation, you have no way of knowing what your AI is ingesting, storing, or exposing. Employees paste proprietary data into public AI tools. Developers ship AI-powered applications without security review.</p>
+        <p>IBM&rsquo;s 2025 Cost of a Data Breach report found that <a href="https://newsroom.ibm.com/2025-07-30-ibm-report-13-of-organizations-reported-breaches-of-ai-models-or-applications,-97-of-which-reported-lacking-proper-ai-access-controls">13% of organizations have already experienced breaches of AI models or applications, and 97% of those lacked proper AI data access controls</a>. The security implications of AI go deep, and for a closer look at the specific threat vectors, <a href="https://datacouch.io/blog/how-ai-is-changing-cybersecurity-2026">this overview</a> is worth a read.</p>
+
+        <h3>Regulatory and Legal Liability</h3>
+        <p>Governments are catching up to AI faster than organizations are catching up to their data. The frameworks being written assume you already have governed, classified, and auditable data. If you don&rsquo;t, you&rsquo;re not just technically unprepared. You&rsquo;re building regulatory liability into your AI program from day one.</p>
+        <p>The <a href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>, which is currently voluntary but is rapidly becoming the de facto standard, has data governance baked into its foundation. It explicitly requires organizations to update existing data governance and data privacy policies, particularly around the use of sensitive data, as part of any AI governance program to meet the requirements of emerging AI laws. The <a href="https://commission.europa.eu/news-and-media/news/ai-act-enters-force-2024-08-01_en">EU AI Act is already in force</a>, and we can expect laws in the US to follow suit. Organizations that wait for regulation to force the issue will find that retrofitting data governance under legal pressure is significantly more expensive than building it correctly from the start.</p>
+
+        <h2>It Really Is an Iceberg</h2>
+        <p>What you see when you look at a successful AI deployment is the surface: the interface, the output, the demo that impressed the c-suite. What you don&rsquo;t see is everything that had to exist before any of that was possible. A governed data foundation with classified, quality-controlled, and auditable data had to be in place. Security controls and observability needed to exist to know what is flowing in and out of the systems. Regulatory readiness had to be implemented. That&rsquo;s the iceberg. Most of it is underwater and none of it is glamorous.</p>
+        <p>The good news is you have a choice. You can build it now, deliberately, on your own timeline, with the right people and the right architecture. Or you can deploy AI anyway, hit the inevitable walls (hallucinations, a breach, a regulatory inquiry, an AI that confidently tells your customers the wrong thing), and then backpedal.</p>
+        <p>The question was never really about AI. It was always about the data underneath it.</p>
+
+        <div class="article-cta">
+          <h2>A Structured Approach</h2>
+          <p>If what you&rsquo;ve read here sounds familiar, it&rsquo;s because this is the work we do. Infosight helps organizations build the data foundations that AI actually requires: cloud data engineering, architecture, governance, classification, and the strategic planning that ties it all together. Whether you&rsquo;re standing up a new data platform, remediating years of accumulated technical debt, or preparing for the regulatory landscape that&rsquo;s already arriving, we bring the engineering depth and the systems-level thinking to get it done right the first time.</p>
+          <a href="../index.html#services" class="service-link">Explore our services &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 InfoSight Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
